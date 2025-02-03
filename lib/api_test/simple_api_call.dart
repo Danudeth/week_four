@@ -26,13 +26,14 @@ class _SimpleApiCallState extends State<SimpleApiCall> {
           .get(Uri.parse('https://jsonplaceholder.typicode.com/users/'));
           
       if (response.statusCode == 200) {
+        print(response.body);
         List<dynamic> jsonList = jsonDecode(response.body);
         
         setState(() {
           users = jsonList.map((item) => UserData.fromJson(item)).toList();
         });
 
-        print(users);
+        //print(users);
       } else {
         print('Failed to fetch data');
       }

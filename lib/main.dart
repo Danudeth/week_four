@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_four/Homework/air_quarity_api.dart';
+import 'package:week_four/Homework/air_quality_api.dart';
 import 'package:week_four/api_test/simple_api_call.dart';
 import 'package:week_four/form_widget/checkbox.dart';
 import 'package:week_four/form_widget/dropdown.dart';
@@ -25,6 +25,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: AirQuarityApi());
+        home: AirQualityApi());
   }
 }
