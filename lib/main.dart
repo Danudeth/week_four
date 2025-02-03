@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:week_four/Homework/air_quarity_api.dart';
+import 'package:week_four/api_test/simple_api_call.dart';
+import 'package:week_four/form_widget/checkbox.dart';
+import 'package:week_four/form_widget/dropdown.dart';
+import 'package:week_four/form_widget/registration_form.dart';
 import 'package:week_four/form_widget/form_simple.dart';
+import 'package:week_four/form_widget/radio_input.dart';
+import 'package:week_four/form_widget/switch_input.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +25,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const FormSimple());
+        home: AirQuarityApi());
   }
 }

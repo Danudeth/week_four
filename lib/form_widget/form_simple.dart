@@ -16,6 +16,7 @@ class _FormSimpleState extends State<FormSimple> {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
+            leading: Icon(Icons.add),
             title: Text(
               "Form Simple",
             ),
